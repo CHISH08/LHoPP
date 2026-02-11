@@ -1,1 +1,1 @@
-# LHOPP: Mapping Strengths and Limits in Long-Horizon Planning and Policies
+# LHoPP: Mapping Strengths and Limits in Long-Horizon Planning and Policies
