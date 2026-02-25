@@ -1,0 +1,8 @@
+# VirtualHome benchmark dependencies
+# Install from VirtualHomeRout directory:
+#   python -m pip install -r requirements.txt
+
+-r virtualhome/virtualhome/requirements.txt
+# OpenCV 4.8.x in VirtualHome is built against NumPy 1.x ABI.
+numpy<2
+-e virtualhome

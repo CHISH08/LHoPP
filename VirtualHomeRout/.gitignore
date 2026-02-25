@@ -1,0 +1,6 @@
+/virtualhome/
+*.log
+*.json
+*.jsonl
+*.png
+*.csv
