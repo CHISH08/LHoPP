@@ -1,0 +1,123 @@
+version: 1
+source_tasks_file: calvin/calvin_models/conf/callbacks/rollout/tasks/new_playtable_tasks.yaml
+notes:
+  - This taxonomy is protocol metadata for stratified evaluation.
+  - A task can belong to multiple groups.
+
+category_ids_from_calvin_eval:
+  1: rotate_push
+  2: slider_motion
+  3: drawer_motion
+  4: lift_from_table
+  5: lift_from_slider
+  6: lift_from_drawer
+  7: placement
+  8: light_toggle
+  9: push_into_drawer
+  10: stacking
+  11: unstacking
+
+strata:
+  speed_reaction:
+    description: Fast state-switch or short motion tasks.
+    tasks:
+      - move_slider_left
+      - move_slider_right
+      - open_drawer
+      - close_drawer
+      - turn_on_lightbulb
+      - turn_off_lightbulb
+      - turn_on_led
+      - turn_off_led
+
+  accuracy_neatness:
+    description: Precision placement and low-collateral manipulation.
+    tasks:
+      - place_in_slider
+      - place_in_drawer
+      - push_into_drawer
+      - stack_block
+      - unstack_block
+      - rotate_red_block_right
+      - rotate_red_block_left
+      - rotate_blue_block_right
+      - rotate_blue_block_left
+      - rotate_pink_block_right
+      - rotate_pink_block_left
+
+  vision_dominant:
+    description: Tasks where visual localization and alignment dominate.
+    tasks:
+      - push_red_block_right
+      - push_red_block_left
+      - push_blue_block_right
+      - push_blue_block_left
+      - push_pink_block_right
+      - push_pink_block_left
+      - rotate_red_block_right
+      - rotate_red_block_left
+      - rotate_blue_block_right
+      - rotate_blue_block_left
+      - rotate_pink_block_right
+      - rotate_pink_block_left
+      - place_in_slider
+      - place_in_drawer
+      - push_into_drawer
+      - stack_block
+      - unstack_block
+
+  contact_precision:
+    description: Contact-rich tasks where tactile/proprio can improve reliability.
+    tasks:
+      - lift_red_block_table
+      - lift_red_block_slider
+      - lift_red_block_drawer
+      - lift_blue_block_table
+      - lift_blue_block_slider
+      - lift_blue_block_drawer
+      - lift_pink_block_table
+      - lift_pink_block_slider
+      - lift_pink_block_drawer
+      - place_in_slider
+      - place_in_drawer
+      - push_into_drawer
+      - stack_block
+      - unstack_block
+
+  state_reasoning:
+    description: Tasks with explicit scene-state preconditions.
+    tasks:
+      - move_slider_left
+      - move_slider_right
+      - open_drawer
+      - close_drawer
+      - lift_red_block_slider
+      - lift_red_block_drawer
+      - lift_blue_block_slider
+      - lift_blue_block_drawer
+      - lift_pink_block_slider
+      - lift_pink_block_drawer
+      - place_in_slider
+      - place_in_drawer
+      - push_into_drawer
+      - turn_on_lightbulb
+      - turn_off_lightbulb
+      - turn_on_led
+      - turn_off_led
+      - stack_block
+      - unstack_block
+
+  compositional_long_horizon:
+    description: Tasks that are most informative in multi-step dependencies and recovery analysis.
+    tasks:
+      - lift_red_block_slider
+      - lift_red_block_drawer
+      - lift_blue_block_slider
+      - lift_blue_block_drawer
+      - lift_pink_block_slider
+      - lift_pink_block_drawer
+      - place_in_slider
+      - place_in_drawer
+      - push_into_drawer
+      - stack_block
+      - unstack_block

@@ -12,7 +12,7 @@ The full protocol targets two complementary regimes:
 - `VirtualHome` (program-driven household activities)
 - `CALVIN` (language-conditioned manipulation)
 
-This repository currently includes the runnable benchmark pipeline for `VirtualHome`.
+This repository currently includes the runnable benchmark pipeline for `VirtualHome` and detailed protocol documentation for `CALVIN`.
 
 ## Repository Structure
 
@@ -20,6 +20,11 @@ This repository currently includes the runnable benchmark pipeline for `VirtualH
 - `VirtualHomeRout/requirements.txt` - reproducible dependencies
 - `VirtualHomeRout/docs/BENCHMARKING.md` - benchmark setup and run guide
 - `VirtualHomeRout/docs/METRICS.md` - metric definitions and interpretation
+- `calvin_bench/benchmarks/calvin/README.md` - CALVIN benchmark protocol overview
+- `calvin_bench/benchmarks/calvin/docs/SCENARIOS.md` - CALVIN ideal and stress scenario matrix
+- `calvin_bench/benchmarks/calvin/docs/METRICS.md` - CALVIN metric definitions
+- `calvin_bench/benchmarks/calvin/docs/COMPARISON.md` - fair comparison rules
+- `calvin_bench/benchmarks/calvin/docs/TASK_STRATIFICATION.md` - CALVIN task-type stratification
 
 ## Reproducible Setup (From Scratch, Python 3.11)
 
