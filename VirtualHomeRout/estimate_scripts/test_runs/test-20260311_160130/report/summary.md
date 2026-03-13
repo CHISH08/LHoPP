@@ -1,0 +1,79 @@
+# Full Pipeline Test Report
+
+- status: **PASS**
+- created_at_utc: `2026-03-11T16:04:56.866899+00:00`
+- failed_checks: `0`
+- warning_checks: `0`
+
+## Artifacts
+- test_root: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130`
+- logs_dir: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\logs`
+- report_dir: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\report`
+- protocol_root: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle`
+- step2_runs_root: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step2`
+- step4_runs_root: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4`
+- mock_root: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\mock_model`
+- selected_base_port: `8090`
+- selected_model_port: `19000`
+- step2_run_dir: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step2\unity_bootstrap_20260311_160131`
+- step4_run_dir: `C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144`
+
+## Checks
+- [OK] `unity_exe_exists`: unity_exe=C:\Users\User\code\paper\LHoPP\VirtualHomeRout\dataset\windows_exec.v2.3.0\VirtualHome.exe
+- [OK] `step1_exit_code`: returncode=0
+- [OK] `step1_json_summary`: json summary parsed
+- [OK] `step1_selected_csv_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\data\selected_tasks.csv
+- [OK] `step1_task_manifest_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\manifest\task_manifest.json
+- [OK] `step1_benchmark_manifest_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\manifest\benchmark_manifest.json
+- [OK] `step1_selected_rows_count`: selected_rows=3 expected=3
+- [OK] `step3_exit_code`: returncode=0
+- [OK] `step3_json_summary`: json summary parsed
+- [OK] `step3_artifact_episodes_contracts.csv`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\contracts\episodes_contracts.csv
+- [OK] `step3_artifact_steps_contracts.csv`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\contracts\steps_contracts.csv
+- [OK] `step3_artifact_events_schedule.csv`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\contracts\events_schedule.csv
+- [OK] `step3_artifact_conditions_contracts.json`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\contracts\conditions_contracts.json
+- [OK] `step3_artifact_schema_refs.json`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\contracts\schema_refs.json
+- [OK] `step3_artifact_scenario_contract_manifest.json`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\protocol_bundle\contracts\scenario_contract_manifest.json
+- [OK] `step2_exit_code`: returncode=0
+- [OK] `step2_json_summary`: json summary parsed
+- [OK] `step2_file_env_registry.csv`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step2\unity_bootstrap_20260311_160131\env_setup\env_registry.csv
+- [OK] `step2_file_sensor_probe.csv`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step2\unity_bootstrap_20260311_160131\env_setup\sensor_probe.csv
+- [OK] `step2_file_interaction_probe.csv`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step2\unity_bootstrap_20260311_160131\env_setup\interaction_probe.csv
+- [OK] `step2_file_health_report.json`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step2\unity_bootstrap_20260311_160131\env_setup\health_report.json
+- [OK] `step2_env_registry_count`: rows=2 workers=2
+- [OK] `step2_all_ready`: ready=2 workers=2
+- [OK] `step2_health_ready`: overall_status=ready
+- [OK] `mock_server_started`: pid=8212
+- [OK] `mock_server_port_ready`: port=19000 is open
+- [OK] `step4_exit_code`: returncode=0
+- [OK] `step4_json_summary`: json summary parsed
+- [OK] `step4_run_summary_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\run_summary.json
+- [OK] `step4_status_completed`: status=completed
+- [OK] `step4_episodes_total`: episodes_total=2 expected=2
+- [OK] `step4_steps_positive`: steps_total=10
+- [OK] `step4_worker_errors`: worker_errors_total=0
+- [OK] `step4_cells_dir_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells
+- [OK] `step4_cells_non_empty`: cell_dirs=2
+- [OK] `step4_cell_file_unified_ranking.L3.masked.action_constrained.base_episodes`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L3.masked.action_constrained.base\episodes.csv
+- [OK] `step4_cell_file_unified_ranking.L3.masked.action_constrained.base_steps`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L3.masked.action_constrained.base\steps.csv
+- [OK] `step4_cell_file_unified_ranking.L3.masked.action_constrained.base_events`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L3.masked.action_constrained.base\events.csv
+- [OK] `step4_cell_file_unified_ranking.L3.masked.action_constrained.base_metadata`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L3.masked.action_constrained.base\metadata.json
+- [OK] `step4_cell_rows_unified_ranking.L3.masked.action_constrained.base_episodes`: rows=1
+- [OK] `step4_cell_rows_unified_ranking.L3.masked.action_constrained.base_steps`: rows=5
+- [OK] `step4_timing_fields_unified_ranking.L3.masked.action_constrained.base`: decision/sim/wallclock fields present
+- [OK] `step4_cell_file_unified_ranking.L4.camera.sensor_stress.l4_cam_subset_episodes`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L4.camera.sensor_stress.l4_cam_subset\episodes.csv
+- [OK] `step4_cell_file_unified_ranking.L4.camera.sensor_stress.l4_cam_subset_steps`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L4.camera.sensor_stress.l4_cam_subset\steps.csv
+- [OK] `step4_cell_file_unified_ranking.L4.camera.sensor_stress.l4_cam_subset_events`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L4.camera.sensor_stress.l4_cam_subset\events.csv
+- [OK] `step4_cell_file_unified_ranking.L4.camera.sensor_stress.l4_cam_subset_metadata`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\cells\unified_ranking.L4.camera.sensor_stress.l4_cam_subset\metadata.json
+- [OK] `step4_cell_rows_unified_ranking.L4.camera.sensor_stress.l4_cam_subset_episodes`: rows=1
+- [OK] `step4_cell_rows_unified_ranking.L4.camera.sensor_stress.l4_cam_subset_steps`: rows=5
+- [OK] `step4_timing_fields_unified_ranking.L4.camera.sensor_stress.l4_cam_subset`: decision/sim/wallclock fields present
+- [OK] `step4_frames_manifest_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\runs_step4\vh_step4_20260311_160144\frames_manifest.csv
+- [OK] `step4_frames_rows_positive`: rows=10
+- [OK] `step4_frame_files_exist`: missing_frames=0
+- [OK] `mock_requests_log_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\mock_model\requests.jsonl
+- [OK] `mock_stats_exists`: C:\Users\User\code\paper\LHoPP\VirtualHomeRout\estimate_scripts\test_runs\test-20260311_160130\mock_model\server_stats.json
+- [OK] `mock_requests_non_empty`: rows=10
+- [OK] `strict_blind_no_forbidden_keys`: violations=0
+- [OK] `mock_worker_slots_coverage`: active_slots=2 expected_min=2
+- [OK] `mock_async_parallel_observed`: max_inflight=2

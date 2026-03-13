@@ -1,0 +1,41 @@
+{
+  "schema_version": "v1",
+  "protocol_version": "calvin_stage2",
+  "generated_from": {
+    "task_manifest": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-protocol-20260312_173812\\bundle_a\\manifest\\task_manifest.json",
+    "benchmark_manifest": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-protocol-20260312_173812\\bundle_a\\manifest\\benchmark_manifest.json",
+    "task_manifest_sha256": "88f816cd88ff501dde0656f92d1849d8c9fd4be232b5b576e0a8ec53097120dd",
+    "benchmark_manifest_sha256": "1f7b85162a728d4337c8bca55159c40d1976d6a8e6de5417d487b37bac5dd683"
+  },
+  "run_signature": "49ad7132b219bd2824546d9b1c1957bad6a1e4cab97154ace3005a81893b96c6",
+  "track": "unified_ranking",
+  "selection_seed": 42,
+  "conditions_total": 168,
+  "episodes_total": 840,
+  "steps_total": 840,
+  "events_total": 2040,
+  "budget_policy": {
+    "max_subtask_steps": 360,
+    "max_episode_steps": 1800,
+    "max_time_sec_formula": "1800*2"
+  },
+  "assumptions": [
+    "Step 2 generates machine-readable contracts per episode, not expanded runtime logs.",
+    "steps_contracts.csv is per-episode step template (step range), not per-step rollout trace.",
+    "Noise/dropout/blackout/wrong-action schedules are deterministic and seed-controlled."
+  ],
+  "output_files": {
+    "conditions_contracts": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-protocol-20260312_173812\\bundle_a\\contracts\\conditions_contracts.json",
+    "schema_refs": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-protocol-20260312_173812\\bundle_a\\contracts\\schema_refs.json",
+    "episodes_contracts_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-protocol-20260312_173812\\bundle_a\\contracts\\episodes_contracts.csv",
+    "steps_contracts_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-protocol-20260312_173812\\bundle_a\\contracts\\steps_contracts.csv",
+    "events_schedule_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-protocol-20260312_173812\\bundle_a\\contracts\\events_schedule.csv"
+  },
+  "output_file_hashes_sha256": {
+    "conditions_contracts.json": "6a055aa561662da570a39654391f8616b45b3847af119c2b41dd64e8ddaee351",
+    "schema_refs.json": "2e321e9a9c3ac7f42048db943c32de27553b6fbcb9cfa76898dde142195e444c",
+    "episodes_contracts.csv": "4c169f8866d309fc49a771f8d2c9adcd99411415f640e21dd2e3d33bbe996083",
+    "steps_contracts.csv": "8eb4e158ee43d5416890f018def16879c8aef074228c53aab0a92ad5b23fe2fd",
+    "events_schedule.csv": "cbb945c069f6a8c13021e38a2d20630f3fcad359eab2372109b05f90c7bc455f"
+  }
+}

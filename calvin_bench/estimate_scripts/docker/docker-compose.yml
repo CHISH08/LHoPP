@@ -1,0 +1,32 @@
+﻿services:
+  calvin-benchmark-ui:
+    build:
+      context: ../..
+      dockerfile: estimate_scripts/docker/Dockerfile
+    container_name: calvin-benchmark-ui
+    restart: unless-stopped
+    ports:
+      - "7860:7860"
+    environment:
+      - CALVIN_ROOT=/volumes/calvin_repo
+      - CALVIN_DATASET_PATH=/volumes/calvin_dataset
+      - CALVIN_PROTOCOL_ROOT=/volumes/calvin_protocol_bundle
+      - CALVIN_CONTRACTS_ROOT=/volumes/calvin_protocol_bundle/contracts
+      - CALVIN_RUN_ROOT=/volumes/calvin_runs
+      - CALVIN_TEST_RUN_ROOT=/volumes/calvin_test_runs
+      - CALVIN_MODEL_SCRIPTS_ROOT=/volumes/model_scripts
+    volumes:
+      # Executable benchmark scripts (mounted as volume as requested)
+      - ..:/app/calvin_bench/estimate_scripts
+
+      # Heavy CALVIN assets and repo
+      - ${CALVIN_REPO_VOLUME}:/volumes/calvin_repo:ro
+      - ${CALVIN_DATASET_VOLUME}:/volumes/calvin_dataset:ro
+
+      # Persistent benchmark artifacts
+      - ${CALVIN_PROTOCOL_VOLUME}:/volumes/calvin_protocol_bundle
+      - ${CALVIN_RUNS_VOLUME}:/volumes/calvin_runs
+      - ${CALVIN_TEST_RUNS_VOLUME}:/volumes/calvin_test_runs
+
+      # Optional host folder with model server scripts
+      - ${CALVIN_MODEL_SCRIPTS_VOLUME}:/volumes/model_scripts

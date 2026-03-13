@@ -1,0 +1,17 @@
+﻿cloudpickle
+gitpython
+gradio>=5.0,<6.0
+gym==0.26.2
+hydra-core==1.3.2
+hydra-colorlog
+matplotlib
+numba
+numpy
+numpy-quaternion
+omegaconf
+opencv-python-headless
+pandas
+pybullet
+requests
+rich
+scipy

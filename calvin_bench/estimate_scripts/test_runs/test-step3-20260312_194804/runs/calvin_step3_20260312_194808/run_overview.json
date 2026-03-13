@@ -1,0 +1,41 @@
+{
+  "run_id": "calvin_step3_20260312_194808",
+  "status": "completed",
+  "model_id": "smoke_python_model",
+  "model_family": "test",
+  "model_backend": "python",
+  "parallel_workers": 2,
+  "selection": {
+    "episodes_planned_total": 1008,
+    "episodes_selected_total": 10,
+    "episodes_truncated_by_limit": 998,
+    "benchmark_size": 10,
+    "max_episodes": 10
+  },
+  "result_counts": {
+    "episodes_total": 10,
+    "steps_total": 46,
+    "events_total": 41,
+    "frames_total": 46,
+    "worker_errors_total": 0
+  },
+  "artifacts": {
+    "run_dir": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808",
+    "env_registry_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\env_setup\\env_registry.csv",
+    "cells_dir": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\cells",
+    "flat_logs_dir": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\logs",
+    "episodes_all_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\logs\\episodes_all.csv",
+    "steps_all_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\logs\\steps_all.csv",
+    "events_all_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\logs\\events_all.csv",
+    "episodes_index_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\logs\\episodes_index.csv",
+    "frames_manifest_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\test_runs\\test-step3-20260312_194804\\runs\\calvin_step3_20260312_194808\\frames_manifest.csv"
+  },
+  "quick_read_order": [
+    "run_overview.json",
+    "logs/episodes_index.csv",
+    "logs/episodes_all.csv",
+    "logs/steps_all.csv",
+    "logs/events_all.csv",
+    "frames_manifest.csv"
+  ]
+}

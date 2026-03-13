@@ -1,0 +1,41 @@
+{
+  "run_id": "calvin_step3_20260312_195506",
+  "status": "failed",
+  "model_id": "real_env_check",
+  "model_family": "mock",
+  "model_backend": "mock_random",
+  "parallel_workers": 1,
+  "selection": {
+    "episodes_planned_total": 1680,
+    "episodes_selected_total": 1,
+    "episodes_truncated_by_limit": 1679,
+    "benchmark_size": 0,
+    "max_episodes": 1
+  },
+  "result_counts": {
+    "episodes_total": 0,
+    "steps_total": 0,
+    "events_total": 0,
+    "frames_total": 0,
+    "worker_errors_total": 1
+  },
+  "artifacts": {
+    "run_dir": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506",
+    "env_registry_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\env_setup\\env_registry.csv",
+    "cells_dir": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\cells",
+    "flat_logs_dir": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\logs",
+    "episodes_all_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\logs\\episodes_all.csv",
+    "steps_all_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\logs\\steps_all.csv",
+    "events_all_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\logs\\events_all.csv",
+    "episodes_index_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\logs\\episodes_index.csv",
+    "frames_manifest_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\runs\\calvin_step3_20260312_195506\\frames_manifest.csv"
+  },
+  "quick_read_order": [
+    "run_overview.json",
+    "logs/episodes_index.csv",
+    "logs/episodes_all.csv",
+    "logs/steps_all.csv",
+    "logs/events_all.csv",
+    "frames_manifest.csv"
+  ]
+}

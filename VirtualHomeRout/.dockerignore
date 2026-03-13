@@ -1,0 +1,18 @@
+# Heavy data (mounted as volumes)
+dataset/
+virtualhome/virtualhome/dataset/
+
+# Runtime artifacts
+estimate_scripts/runs/
+estimate_scripts/test_runs/
+estimate_scripts/protocol_bundle/
+
+# Caches
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.pytest_cache/
+
+# VCS / local env
+.git/
+.venv*/

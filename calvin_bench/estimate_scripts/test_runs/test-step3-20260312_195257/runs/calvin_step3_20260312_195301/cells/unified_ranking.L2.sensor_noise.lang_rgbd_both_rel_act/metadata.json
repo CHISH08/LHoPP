@@ -1,0 +1,6 @@
+{
+  "condition_id": "unified_ranking.L2.sensor_noise.lang_rgbd_both_rel_act",
+  "episodes_count": 1,
+  "steps_count": 5,
+  "events_count": 5
+}

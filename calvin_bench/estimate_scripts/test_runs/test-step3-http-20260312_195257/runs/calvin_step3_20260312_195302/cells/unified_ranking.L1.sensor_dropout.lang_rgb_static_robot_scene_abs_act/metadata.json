@@ -1,0 +1,6 @@
+{
+  "condition_id": "unified_ranking.L1.sensor_dropout.lang_rgb_static_robot_scene_abs_act",
+  "episodes_count": 1,
+  "steps_count": 24,
+  "events_count": 24
+}

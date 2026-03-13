@@ -1,0 +1,41 @@
+{
+  "schema_version": "v1",
+  "protocol_version": "calvin_stage2",
+  "generated_from": {
+    "task_manifest": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\protocol_bundle_test\\manifest\\task_manifest.json",
+    "benchmark_manifest": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\protocol_bundle_test\\manifest\\benchmark_manifest.json",
+    "task_manifest_sha256": "92175403da234ab76140bb7a9218543237b131fa24950bb654c0a758bb630baa",
+    "benchmark_manifest_sha256": "a3fdc8f64c870a758560f23bc3a8f68235834a98c28013bcfc83761dfb3d9d72"
+  },
+  "run_signature": "7b7561610fdbcbadd286dcbf674f7a4a583581b8b15af3ec6943fd63a4351308",
+  "track": "unified_ranking",
+  "selection_seed": 42,
+  "conditions_total": 168,
+  "episodes_total": 1680,
+  "steps_total": 1680,
+  "events_total": 4080,
+  "budget_policy": {
+    "max_subtask_steps": 360,
+    "max_episode_steps": 1800,
+    "max_time_sec_formula": "1800*2"
+  },
+  "assumptions": [
+    "Step 2 generates machine-readable contracts per episode, not expanded runtime logs.",
+    "steps_contracts.csv is per-episode step template (step range), not per-step rollout trace.",
+    "Noise/dropout/blackout/wrong-action schedules are deterministic and seed-controlled."
+  ],
+  "output_files": {
+    "conditions_contracts": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\protocol_bundle_test\\contracts\\conditions_contracts.json",
+    "schema_refs": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\protocol_bundle_test\\contracts\\schema_refs.json",
+    "episodes_contracts_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\protocol_bundle_test\\contracts\\episodes_contracts.csv",
+    "steps_contracts_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\protocol_bundle_test\\contracts\\steps_contracts.csv",
+    "events_schedule_csv": "C:\\Users\\User\\code\\paper\\LHoPP\\calvin_bench\\estimate_scripts\\protocol_bundle_test\\contracts\\events_schedule.csv"
+  },
+  "output_file_hashes_sha256": {
+    "conditions_contracts.json": "6a055aa561662da570a39654391f8616b45b3847af119c2b41dd64e8ddaee351",
+    "schema_refs.json": "2e321e9a9c3ac7f42048db943c32de27553b6fbcb9cfa76898dde142195e444c",
+    "episodes_contracts.csv": "f72ed106c98f22240c47b7eccefc1bca33856d47ce975f5376822854346ac0be",
+    "steps_contracts.csv": "0a52b1ade16e162c2828e618d5af387d004388ef57ebfba4304be4bed15d6fde",
+    "events_schedule.csv": "d0b3e1eba9b36ac5a89767ba4c7298610551d8f0a0e094b459fe5b339615a7be"
+  }
+}

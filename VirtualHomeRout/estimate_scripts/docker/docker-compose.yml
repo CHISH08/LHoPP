@@ -1,0 +1,23 @@
+services:
+  virtualhome-benchmark-ui:
+    build:
+      context: ../..
+      dockerfile: estimate_scripts/docker/Dockerfile
+    container_name: virtualhome-benchmark-ui
+    restart: unless-stopped
+    ports:
+      - "7860:7860"
+    environment:
+      - VH_DATASET_ROOT=/volumes/vh_dataset
+      - VH_UNITY_EXE=${VH_UNITY_EXE}
+      - VH_CALVIN_ROOT=/volumes/calvin
+    volumes:
+      # Persist benchmark artifacts
+      - ../runs:/app/VirtualHomeRout/estimate_scripts/runs
+      - ../test_runs:/app/VirtualHomeRout/estimate_scripts/test_runs
+      - ../protocol_bundle:/app/VirtualHomeRout/estimate_scripts/protocol_bundle
+
+      # Heavy assets mounted from host
+      - ${VH_DATASET_VOLUME}:/volumes/vh_dataset:ro
+      - ${VH_UNITY_VOLUME}:/volumes/unity:ro
+      - ${CALVIN_VOLUME}:/volumes/calvin:ro

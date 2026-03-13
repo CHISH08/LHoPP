@@ -1,0 +1,21 @@
+﻿# Heavy assets are mounted as volumes
+calvin/
+benchmarks/
+checks/
+reports/
+
+# Runtime artifacts (persist via volumes)
+estimate_scripts/runs/
+estimate_scripts/test_runs/
+estimate_scripts/protocol_bundle/
+estimate_scripts/protocol_bundle_test/
+
+# Python caches
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.pytest_cache/
+
+# VCS and local env
+.git/
+.venv*/

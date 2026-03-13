@@ -1,0 +1,6 @@
+{
+  "condition_id": "unified_ranking.L3.safety_blackout_safe_abstain.lang_rgb_static_gripper_rel_act",
+  "episodes_count": 1,
+  "steps_count": 1,
+  "events_count": 1
+}
